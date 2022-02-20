@@ -14,13 +14,13 @@ i,flag=0,0
     i+=1
     time.sleep(2)
     print(mouse.position())'''
-while(True):
+while True:
     b=driver.current_url
     if (b.strip()=="http://localhost:3446/?"):
         row=58
         column=574
-        while(True):
-            flag=1
+        flag=1
+        while True:
             time.sleep(12)
             elem=driver.find_element_by_id("responseJSON")
             val=elem.get_attribute("value")
